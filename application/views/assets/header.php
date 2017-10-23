@@ -7,7 +7,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
-    <title>Codeigniter</title>
+    <title>Gobierno Regional de Los Ríos</title>
   </head>
   <body>
     <nav class="navbar navbar-default">
@@ -20,7 +20,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Codeigniter</a>
+            <a class="navbar-brand" href="<?php echo base_url(); ?>index.php/workers/workers_management">Administrador</a>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
