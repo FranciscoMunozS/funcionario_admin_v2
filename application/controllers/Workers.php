@@ -11,14 +11,9 @@ class Workers extends CI_Controller {
 
 	public function _example_output($output = null)
 	{
+		$this->load->view('assets/header');
 		$this->load->view('workers/crud',(array)$output);
-	}
-
-	public function offices()
-	{
-		$output = $this->grocery_crud->render();
-
-		$this->_example_output($output);
+		$this->load->view('assets/footer');
 	}
 
 	public function index()
@@ -28,6 +23,10 @@ class Workers extends CI_Controller {
 
 	public function workers_management()
 	{
+		if(!$this->session->userdata('isUserLoggedIn')){
+			redirect('users/login');
+		}
+
 		try{
 			$crud = new grocery_CRUD();
 
@@ -38,7 +37,7 @@ class Workers extends CI_Controller {
 			$crud->required_fields('nombre','division','unidad','email','fono');
 			$crud->columns('nombre','file','division','unidad','email','fono');
 
-      $crud->set_field_upload('file','/uploads');
+      $crud->set_field_upload('file','uploads');
 
 			$output = $crud->render();
 

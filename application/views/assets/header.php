@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
     <title>Codeigniter</title>
   </head>
@@ -29,7 +31,6 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
             <?php if($this->session->userdata('isUserLoggedIn')) : ?>
-              <li><a href="<?php echo base_url(); ?>index.php/users/account"><?php echo $user['username']; ?></a></li>
               <li><a href="<?php echo base_url(); ?>index.php/users/logout">cerrar sesión</a></li>
             <?php endif; ?>
             </ul>

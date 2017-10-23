@@ -33,7 +33,7 @@ class Users extends CI_Controller {
         if($checkLogin){
           $this->session->set_userdata('isUserLoggedIn',TRUE);
           $this->session->set_userdata('userId',$checkLogin['id']);
-          redirect('users/account/');
+          redirect('workers/workers_management/');
         }else{
           $data['error_msg'] = 'Contraseña o Correo electronico incorrectos. Por favor, intente de nuevo.';
         }
