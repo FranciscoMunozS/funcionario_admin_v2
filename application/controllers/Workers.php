@@ -5,7 +5,6 @@ class Workers extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-
 		$this->load->library('grocery_CRUD');
 	}
 
@@ -37,7 +36,7 @@ class Workers extends CI_Controller {
 			$crud->required_fields('nombre','division','unidad','email','fono');
 			$crud->columns('nombre','file','division','unidad','email','fono');
 
-      $crud->set_field_upload('file','uploads');
+      $crud->set_field_upload('file','');
 
 			$output = $crud->render();
 
