@@ -1,5 +1,5 @@
 <?php
-$connect = mysqli_connect("localhost", "root", "Gore2016", "codeigniter");
+$connect = mysqli_connect("localhost", "root", "root", "codeigniter");
 $output = '';
 if(isset($_POST["query"])) {
   $search = mysqli_real_escape_string($connect, $_POST["query"]);

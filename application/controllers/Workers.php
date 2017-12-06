@@ -36,7 +36,7 @@ class Workers extends CI_Controller {
 			$crud->required_fields('nombre','division','unidad','email','fono');
 			$crud->columns('nombre','file','division','unidad','email','fono');
 
-      $crud->set_field_upload('file','');
+      $crud->set_field_upload('file', './');
 
 			$output = $crud->render();
 
