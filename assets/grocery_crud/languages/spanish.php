@@ -86,10 +86,9 @@
 	$lang['list_more'] = 'Mas';
 
 	/* Added in version 1.5.6 */
-	$lang['list_search_column'] = 'Search {column_name}';
+	$lang['list_search_column'] = 'Buscar {column_name}';
 
 	/* Added in version 1.5.8 */
-	$lang['alert_delete_multiple'] = 'Are you sure that you want to delete those {items_amount} items?';
+	$lang['alert_delete_multiple'] = 'Esta seguro que quiere eliminar estos {items_amount} elementos?';
 
-	$lang['alert_delete_multiple_one'] = 'Are you sure that you want to delete this 1 item?';
-
+	$lang['alert_delete_multiple_one'] = 'Esta seguro que quiere eliminar 1 elemento?';
